@@ -17,7 +17,7 @@ jobs:
         with:
            login-server: ${{ secrets.myconreg6709.azurecr.io }}
            username: ${{ secrets.myconreg6709 }}
-           password: ${{ secrets.NcqtXZ77cQWKf4CVXpUSWQ1wReWIvXrXGYwXP6/KI9+ACRBzjupS }}
+           password: ${{ secrets.NcqtXZ77cQWKf4CVXpUSWQ1wReWIvXrXGYwXP6/KI9+ACRBzjupSjupS }}
       - run: |
           docker build . -t ${{ secrets.myconreg6709.azurecr.io }}/myspringapp:${{ github.sha }}
           docker push ${{ secrets.myconreg6709.azurecr.io }}/myspringapp:${{ github.sha }}
